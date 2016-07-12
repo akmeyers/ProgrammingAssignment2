@@ -1,5 +1,5 @@
-##makingthefunctionthatwillcachethematrix
-##modifieddirectlyfromvectorexampleformat
+##making the function that will cache the matrix
+##modified directly from vector example format
 makecachematrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -13,9 +13,9 @@ makecachematrix <- function(x = matrix()) {
        setInverse = setInverse,
        getInverse = getInverse)
 }
-##dataisthethingIhavetodefine
-##cachedatanamingitathing
-##cachesolvethingtogetinversefromcache
+##data is the thing I have to define
+##cache data naming it a thing
+##cache solve thing to get inverse from cache
 cachesolve <- function(x, ...) {
   inv <- x$getInverse()
   if(!is.null(inv)) {
